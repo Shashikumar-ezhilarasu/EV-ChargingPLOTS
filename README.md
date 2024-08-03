@@ -94,7 +94,8 @@ To run this project, you'll need to have Python installed along with the necessa
 
 Here's an example of what the map will look like:
 
-![Example Map](link_to_screenshot.png)
+![Example Map]<img width="918" alt="image" src="https://github.com/user-attachments/assets/bf90caaa-75dc-4657-9b82-29e65d185997">
+
 
 Each marker on the map represents a charging station. Hover over a marker to see details about the station, such as its name, address, and charging capabilities.
 
@@ -103,26 +104,17 @@ Each marker on the map represents a charging station. Hover over a marker to see
 Here's a brief explanation of the Python script used to generate the map:
 
 ```python
-import pandas as pd
-import folium
+import folium 
+from folium.plugins import FastMarkerCluster
+map = folium.Map(location =[41.5025,-72.69997], zoom_start=9)
+latitudes = [a['latitude'] for a in records]
+longitudes = [a['longitude']for a in records]
+for record in records:
+    coords =(record['latitude'], record['longitude'])
+    folium.Marker(coords, popup=record['Station Name']).add_to(map)
 
-# Load the dataset
-data = pd.read_csv('ev_charging_stations.csv')
-
-# Create a map centered on the average location
-map_center = [data['Latitude'].mean(), data['Longitude'].mean()]
-map = folium.Map(location=map_center, zoom_start=5)
-
-# Add markers for each charging station
-for index, row in data.iterrows():
-    folium.Marker(
-        location=[row['Latitude'], row['Longitude']],
-        popup=folium.Popup(f"Station: {row['Station Name']}<br>Address: {row['Address']}<br>Details: {row['Other Details']}", max_width=300),
-        icon=folium.Icon(color='green', icon='bolt')
-    ).add_to(map)
-
-# Save the map as an HTML file
-map.save('my_map.html')
+FastMarkerCluster(data=list(zip(latitudes, longitudes))).add_to(map)
+map
 ```
 
 ## Contributing
