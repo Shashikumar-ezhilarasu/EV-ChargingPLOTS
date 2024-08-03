@@ -1,6 +1,5 @@
 <img width="1470" alt="Screenshot 2024-08-03 at 4 37 55 PM" src="https://github.com/user-attachments/assets/b640e096-3d87-4cd4-a86d-93c3d9af8c40">
 
-Creating a README file for your EV charging stations mapping project is a great way to document your work and guide others who might use or contribute to your project. Here’s a detailed example of what your README file might look like:
 
 ---
 
@@ -144,7 +143,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-For any questions or suggestions, feel free to reach out to me at [youremail@example.com](mailto:youremail@example.com).
+For any questions or suggestions, feel free to reach out to me at shashikumar-ezhilarasu@gmail.com.
 
 ---
 
@@ -152,4 +151,3 @@ For any questions or suggestions, feel free to reach out to me at [youremail@exa
 
 This README template provides a comprehensive overview of your project, including installation instructions, usage guidelines, and details about the dataset and map features. You can adjust the sections according to your project's specifics and requirements.
 
-If you have any questions or need further customization for your README file, feel free to ask!
