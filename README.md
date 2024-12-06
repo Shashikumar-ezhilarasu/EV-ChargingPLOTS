@@ -130,9 +130,7 @@ Contributions are welcome! If you'd like to contribute, please follow these step
 
 Please ensure your code follows the project's coding guidelines and includes appropriate documentation and tests.
 
-## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Contact
 
