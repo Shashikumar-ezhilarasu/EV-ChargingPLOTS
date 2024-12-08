@@ -138,7 +138,5 @@ For any questions or suggestions, feel free to reach out to me at shashikumar-ez
 
 ---
 
-### Summary
 
-This README template provides a comprehensive overview of your project, including installation instructions, usage guidelines, and details about the dataset and map features. You can adjust the sections according to your project's specifics and requirements.uses advanced DSA concepts 
 
