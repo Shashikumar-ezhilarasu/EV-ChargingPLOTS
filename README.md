@@ -4,6 +4,12 @@
 
 ---
 
+
+
+https://github.com/user-attachments/assets/a2b5ccad-49fa-4428-af5e-17253fd26601
+
+
+
 # EV Charging Stations Mapping
 
 This project visualizes Electric Vehicle (EV) charging stations on an interactive map using Python and Folium. The data is sourced from a CSV file containing information about each charging station, such as its name, address, latitude, longitude, and other relevant details. By hovering over each marker on the map, users can view specific details about the charging station.
